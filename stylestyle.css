@@ -39,6 +39,7 @@
     top: 35.4vw;
 }
 
+/****************BØGERNE****************/
 #bog_sommerfugl {
     background-image: url(grafik/bog_sommerfugl.svg);
     background-size: 100%;
@@ -129,6 +130,8 @@
     top: 45.2vw;
 }
 
+/****************POINT****************/
+
 #points {
     background-image: url(grafik/point.svg);
     background-size: 100%;
@@ -140,6 +143,7 @@
     top: 40vw;
 }
 
+/****************LIV****************/
 
 #energy {
     background-image: url(grafik/liv.svg);
@@ -152,6 +156,7 @@
     top: 49vw;
 }
 
+/****************TID****************/
 #time {
     background-image: url(grafik/ur_skive.svg);
     background-size: 100%;
@@ -163,6 +168,8 @@
     top: 8vw;
 }
 
+/****************STARTSKÆRM****************/
+
 #start {
     background-image: url(grafik/startskaerm.svg);
     background-size: 100%;
@@ -171,6 +178,35 @@
     margin: auto;
     position: absolute;
     overflow: hidden;
+    display: none;
+}
+
+#start_knap_startskaerm {
+    background-image: url(grafik/start_knap_startskaerm.svg);
+    background-size: 100%;
+    width: 28vw;
+    height: 5.6vw;
+    margin: auto;
+    position: absolute;
+    overflow: hidden;
+
+    left: 50vw;
+    top: 22.4vw;
+    display: none;
+}
+
+
+#setting_knap_startskaerm {
+    background-image: url(grafik/setting_knap_startskaerm.svg);
+    background-size: 100%;
+    width: 32vw;
+    height: 5.3vw;
+    margin: auto;
+    position: absolute;
+    overflow: hidden;
+
+    left: 51.2vw;
+    top: 39.4vw;
     display: none;
 }
 
