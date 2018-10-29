@@ -7,7 +7,7 @@
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100vw;
-    height: 100vw;
+    height: 56.25vw;
     margin: auto;
     position: absolute;
     overflow: hidden;
@@ -15,7 +15,6 @@
 
 #karakteren {
     background-image: url(grafik/karakteren.svg);
-    background-repeat: no-repeat;
     background-size: 100%;
     width: 35vw;
     height: 50vw;
@@ -30,10 +29,9 @@
 
 #game_foreground {
     background-image: url(grafik/skrivebord_forgrund.svg);
-    background-repeat: no-repeat;
     background-size: 100%;
     width: 35vw;
-    height: 25vw;
+    height: 20.8vw;
 
 
     position: absolute;
@@ -43,10 +41,9 @@
 
 #bog_sommerfugl {
     background-image: url(grafik/bog_sommerfugl.svg);
-    background-repeat: no-repeat;
     background-size: 100%;
     width: 16vw;
-    height: 7vw;
+    height: 5.6vw;
 
     position: absolute;
     left: 47vw;
@@ -55,7 +52,6 @@
 
 #bog_sol {
     background-image: url(grafik/bog_sol.svg);
-    background-repeat: no-repeat;
     background-size: 100%;
     width: 5.2vw;
     height: 13vw;
@@ -68,10 +64,9 @@
 
 #bog_gris {
     background-image: url(grafik/bog_gris.svg);
-    background-repeat: no-repeat;
     background-size: 100%;
     width: 20vw;
-    height: 5vw;
+    height: 4.3vw;
 
     position: absolute;
     left: 61vw;
@@ -80,10 +75,10 @@
 
 #bog_faar {
     background-image: url(grafik/bog_faar.svg);
-    background-repeat: no-repeat;
+
     background-size: 100%;
     width: 5.2vw;
-    height: 12vw;
+    height: 9.8vw;
 
     position: absolute;
     left: 91.3vw;
@@ -92,46 +87,42 @@
 
 #bog_hund {
     background-image: url(grafik/bog_hund.svg);
-    background-repeat: no-repeat;
     background-size: 100%;
     width: 5.2vw;
-    height: 12vw;
+    height: 9.9vw;
 
     position: absolute;
     left: 79.3vw;
-    top: 33.9vw;
+    top: 33.8vw;
 }
 
 #bog_ko {
     background-image: url(grafik/bog_ko.svg);
-    background-repeat: no-repeat;
     background-size: 100%;
     width: 4.7vw;
-    height: 12vw;
+    height: 10vw;
 
     position: absolute;
-    left: 55.6vw;
-    top: 45.2vw;
+    left: 55.4vw;
+    top: 45.1vw;
 }
 
 #bog_kat {
     background-image: url(grafik/bog_kat.svg);
-    background-repeat: no-repeat;
     background-size: 100%;
     width: 4.7vw;
-    height: 10vw;
+    height: 8.7vw;
 
     position: absolute;
-    left: 65.3vw;
-    top: 46.4vw;
+    left: 65.1vw;
+    top: 46.5vw;
 }
 
 #bog_elefant {
     background-image: url(grafik/bog_elefant.svg);
-    background-repeat: no-repeat;
     background-size: 100%;
     width: 7.5vw;
-    height: 10vw;
+    height: 9.9vw;
 
     position: absolute;
     left: 89vw;
@@ -140,10 +131,9 @@
 
 #points {
     background-image: url(grafik/point.svg);
-    background-repeat: no-repeat;
     background-size: 100%;
     width: 12vw;
-    height: 10vw;
+    height: 7.8vw;
 
     position: absolute;
     left: 2vw;
@@ -153,10 +143,9 @@
 
 #energy {
     background-image: url(grafik/liv.svg);
-    background-repeat: no-repeat;
     background-size: 100%;
     width: 12vw;
-    height: 10vw;
+    height: 4.6vw;
 
     position: absolute;
     left: 2vw;
@@ -165,10 +154,9 @@
 
 #time {
     background-image: url(grafik/ur_skive.svg);
-    background-repeat: no-repeat;
     background-size: 100%;
     width: 2vw;
-    height: 6vw;
+    height: 5vw;
 
     position: absolute;
     left: 7.8vw;
@@ -177,10 +165,9 @@
 
 #start {
     background-image: url(grafik/startskaerm.svg);
-    background-repeat: no-repeat;
     background-size: 100%;
     width: 100vw;
-    height: 100vw;
+    height: 56.25vw;
     margin: auto;
     position: absolute;
     overflow: hidden;
@@ -189,10 +176,9 @@
 
 #settings {
     background-image: url(grafik/setting.svg);
-    background-repeat: no-repeat;
     background-size: 100%;
     width: 80vw;
-    height: 60vw;
+    height: 54vw;
     margin: auto;
     position: absolute;
     overflow: hidden;
@@ -205,10 +191,9 @@
 
 #gameover {
     background-image: url(grafik/game_over_firkant.svg);
-    background-repeat: no-repeat;
     background-size: 100%;
     width: 80vw;
-    height: 60vw;
+    height: 54vw;
     margin: auto;
     position: absolute;
     overflow: hidden;
@@ -220,10 +205,9 @@
 
 #levelcomplete {
     background-image: url(grafik/win_firkant.svg);
-    background-repeat: no-repeat;
     background-size: 100%;
     width: 80vw;
-    height: 60vw;
+    height: 54vw;
     margin: auto;
     position: absolute;
     overflow: hidden;
