@@ -51,6 +51,19 @@
     top: 2.4vw;
 }
 
+#bog_sommerfugl_forkert {
+    background-image: url(grafik/bog_sommerfugl_forkert.svg);
+    background-size: 100%;
+    width: 16vw;
+    height: 5.6vw;
+
+    position: absolute;
+    left: 47vw;
+    top: 2.4vw;
+
+    display: none;
+}
+
 #bog_sol {
     background-image: url(grafik/bog_sol.svg);
     background-size: 100%;
@@ -60,6 +73,19 @@
     position: absolute;
     left: 71.5vw;
     top: 2.8vw;
+}
+
+#bog_sol_forkert {
+    background-image: url(grafik/bog_sol_forkert.svg);
+    background-size: 100%;
+    width: 5.2vw;
+    height: 13vw;
+
+    position: absolute;
+    left: 71.5vw;
+    top: 2.8vw;
+
+    display: none;
 }
 
 
@@ -74,6 +100,19 @@
     top: 17.4vw;
 }
 
+#bog_gris_rigtig {
+    background-image: url(grafik/bog_gris_rigtig.svg);
+    background-size: 100%;
+    width: 20vw;
+    height: 4.3vw;
+
+    position: absolute;
+    left: 61vw;
+    top: 17.4vw;
+
+    display: none;
+}
+
 #bog_faar {
     background-image: url(grafik/bog_faar.svg);
 
@@ -84,6 +123,20 @@
     position: absolute;
     left: 91.3vw;
     top: 20.5vw;
+}
+
+#bog_faar_rigtig {
+    background-image: url(grafik/bog_faar_rigtig.svg);
+
+    background-size: 100%;
+    width: 5.2vw;
+    height: 9.8vw;
+
+    position: absolute;
+    left: 91.3vw;
+    top: 20.5vw;
+
+    display: none;
 }
 
 #bog_hund {
@@ -97,6 +150,18 @@
     top: 33.8vw;
 }
 
+#bog_hund_forkert {
+    background-image: url(grafik/bog_hund_forkert.svg);
+    background-size: 100%;
+    width: 5.2vw;
+    height: 9.9vw;
+
+    position: absolute;
+    left: 79.3vw;
+    top: 33.8vw;
+    display: none;
+}
+
 #bog_ko {
     background-image: url(grafik/bog_ko.svg);
     background-size: 100%;
@@ -108,6 +173,18 @@
     top: 45.1vw;
 }
 
+#bog_ko_rigtig {
+    background-image: url(grafik/bog_ko_rigtig.svg);
+    background-size: 100%;
+    width: 4.7vw;
+    height: 10vw;
+
+    position: absolute;
+    left: 55.4vw;
+    top: 45.1vw;
+    display: none;
+}
+
 #bog_kat {
     background-image: url(grafik/bog_kat.svg);
     background-size: 100%;
@@ -116,7 +193,20 @@
 
     position: absolute;
     left: 65.1vw;
-    top: 46.5vw;
+    top: 46.4vw;
+}
+
+#bog_kat_rigtig {
+    background-image: url(grafik/bog_kat_rigtig.svg);
+    background-size: 100%;
+    width: 4.7vw;
+    height: 8.7vw;
+
+    position: absolute;
+    left: 65.1vw;
+    top: 46.4vw;
+
+    display: none;
 }
 
 #bog_elefant {
@@ -128,6 +218,19 @@
     position: absolute;
     left: 89vw;
     top: 45.2vw;
+}
+
+#bog_elefant_forkert {
+    background-image: url(grafik/bog_elefant_forkert.svg);
+    background-size: 100%;
+    width: 7.5vw;
+    height: 9.9vw;
+
+    position: absolute;
+    left: 89vw;
+    top: 45.2vw;
+
+    display: none;
 }
 
 /****************POINT****************/
