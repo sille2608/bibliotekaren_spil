@@ -51,7 +51,7 @@ body {
     background-image: url(grafik/bog_sommerfugl.svg);
     background-size: 100%;
     width: 16vw;
-    height: 5.6vw;
+    height: 5.3vw;
 
     position: absolute;
     left: 47vw;
@@ -62,7 +62,7 @@ body {
     background-image: url(grafik/bog_sommerfugl_forkert.svg);
     background-size: 100%;
     width: 16vw;
-    height: 5.6vw;
+    height: 5.3vw;
 
     position: absolute;
     left: 47vw;
@@ -80,18 +80,18 @@ body {
 
     position: absolute;
     left: 71.5vw;
-    top: 2.8vw;
+    top: 2.6vw;
 }
 
 #bog_sol_forkert {
     background-image: url(grafik/bog_sol_forkert.svg);
     background-size: 100%;
     width: 5.2vw;
-    height: 13vw;
+    height: 13.1vw;
 
     position: absolute;
     left: 71.5vw;
-    top: 2.8vw;
+    top: 2.6vw;
 
     /*    display: none;*/
 }
@@ -130,7 +130,7 @@ body {
 
     position: absolute;
     left: 91.3vw;
-    top: 20.5vw;
+    top: 20.4vw;
 }
 
 #bog_faar_rigtig {
@@ -142,7 +142,7 @@ body {
 
     position: absolute;
     left: 91.3vw;
-    top: 20.5vw;
+    top: 20.4vw;
 
     /*    display: none;*/
 }
@@ -150,23 +150,24 @@ body {
 #bog_hund {
     background-image: url(grafik/bog_hund.svg);
     background-size: 100%;
-    width: 5.2vw;
-    height: 9.9vw;
+    width: 5.1vw;
+    height: 9.6vw;
 
     position: absolute;
-    left: 79.3vw;
-    top: 33.8vw;
+    left: 79.6vw;
+    top: 34.1vw;
 }
 
 #bog_hund_forkert {
     background-image: url(grafik/bog_hund_forkert.svg);
     background-size: 100%;
-    width: 5.2vw;
-    height: 9.9vw;
+    width: 5.1vw;
+    height: 9.6vw;
 
     position: absolute;
-    left: 79.3vw;
-    top: 33.8vw;
+    left: 79.6vw;
+    top: 34.1vw;
+
     /*    display: none;*/
 }
 
@@ -200,8 +201,8 @@ body {
     height: 8.7vw;
 
     position: absolute;
-    left: 65.1vw;
-    top: 46.4vw;
+    left: 65.2vw;
+    top: 46.5vw;
 }
 
 #bog_kat_rigtig {
@@ -211,8 +212,8 @@ body {
     height: 8.7vw;
 
     position: absolute;
-    left: 65.1vw;
-    top: 46.4vw;
+    left: 65.2vw;
+    top: 46.5vw;
 
     /*    display: none;*/
 }
@@ -224,7 +225,7 @@ body {
     height: 9.9vw;
 
     position: absolute;
-    left: 89vw;
+    left: 89.1vw;
     top: 45.2vw;
 }
 
@@ -235,7 +236,7 @@ body {
     height: 9.9vw;
 
     position: absolute;
-    left: 89vw;
+    left: 89.1vw;
     top: 45.2vw;
 
     /*    display: none;*/
