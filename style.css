@@ -41,7 +41,7 @@ body {
     top: 22.3vw;
 }
 
-#setting_knap_startskaerm {
+#settings_bottom {
     background-image: url(grafik/setting_knap_startskaerm.svg);
     background-size: 100%;
     width: 32vw;
@@ -616,5 +616,24 @@ body {
     100% {
         transform: scale(1);
         opacity: 1;
+    }
+}
+
+/*****Fade out*****/
+
+.fade_out {
+    animation-name: fadeout_kf;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeout_kf {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
     }
 }

@@ -18,6 +18,30 @@ function showStart() {
     //start animation på start-knap
     document.querySelector("#play").classList.add("pulse");
 
+    //At der kan klikkes på play
+    document.querySelector("#play").addEventListener("click", hideStart);
+
+    //At der kan klikkes på setting
+    document.querySelector("#settings_bottom").addEventListener("click", showSetting);
+}
+
+function showSetting (){
+    console.log("showSetting");
+
+    //vis setting skræm
+    document.querySelector("#settings").classList.add("show");
+
+    //Klik tilbage til start
+    document.querySelector("#kryds_knap").addEventListener("click", hideSetting);
+
+}
+
+function hideSetting() {
+    console.log("hideSetting");
+
+    //skjul setting skærm
+    document.querySelector("#settings").classList.remove("show");
+
 }
 
 function hideStart() {
@@ -31,11 +55,14 @@ function hideStart() {
 
 function gameScreen() {
     console.log("gameScreen");
+
     //skjul startskærm
     document.querySelector("#start").classList.add("hide");
     //vis spilskærm
     document.querySelector("#game").classList.add("show");
-    //NOTE: DET VED JEG IKKE LIGE
+
+
+
 }
 
 
