@@ -139,20 +139,27 @@ function startGame() {
 
 }
 
+let points = 0;
+let life = 3;
+
 function clickCorrect() {
     console.log("clickCorrect")
 
     this.classList.remove("foer_klik");
     this.classList.add("efter_klik");
 
-    //vis grøn bog
-    //NOTE: DET VED JEG IKKE LIGE
-
     //scaling
     //NOTE: DET VED JEG IKKE LIGE
 
     //giv point
-    //NOTE: DET VED JEG IKKE LIGE
+
+    points++;
+    console.log(points);
+    document.querySelector("#points").innerHTML = "points: " + points;
+
+    //her kanlder man på gamestatus så den kan undersøge hver gang hvor mange point der er
+    gameStatus();
+
 }
 
 function clickWrong() {
@@ -161,13 +168,14 @@ function clickWrong() {
     this.classList.remove("foer_klik");
     this.classList.add("efter_klik");
 
-    //vis grøn bog
+    life--;
+    document.querySelector("#energy").innerHTML = "life: " + life;
+    console.log(life);
+
+    //rotating
     //NOTE: DET VED JEG IKKE LIGE
 
-    //scaling
-    //NOTE: DET VED JEG IKKE LIGE
-
-    //giv point
+    //mist liv
     //NOTE: DET VED JEG IKKE LIGE
 }
 

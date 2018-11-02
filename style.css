@@ -352,27 +352,33 @@ body {
 /****************POINT****************/
 
 #points {
-    background-image: url(grafik/point.svg);
     background-size: 100%;
     width: 12vw;
     height: 7.8vw;
 
     position: absolute;
-    left: 2vw;
-    top: 40vw;
+    left: 11.5vw;
+    top: 42.2vw;
+
+    font-family: 'Baloo Bhaijaan', cursive;
+    font-size: 1rem;
 }
+
+
 
 /****************LIV****************/
 
 #energy {
-    background-image: url(grafik/liv.svg);
     background-size: 100%;
     width: 12vw;
     height: 4.6vw;
 
     position: absolute;
-    left: 2vw;
-    top: 49vw;
+    left: 11.5vw;
+    top: 48.7vw;
+
+    font-family: 'Baloo Bhaijaan', cursive;
+    font-size: 1rem;
 }
 
 /****************TID****************/
