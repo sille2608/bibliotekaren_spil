@@ -217,5 +217,5 @@ function gameOver() {
     document.querySelector("#spil_igen_knap").classList.add("show");
 
     //start animation på replay knap
-    //NOTE: DET VED JEG IKKE LIGE
+    document.querySelector("#spil_igen_knap").classList.add("pulse");
 }
