@@ -149,15 +149,15 @@ function clickCorrect() {
     this.classList.add("efter_klik");
 
     //scaling
-    //NOTE: DET VED JEG IKKE LIGE
+    console.log(this);
+    this.classList.add("scaling");
 
     //giv point
-
     points++;
     console.log(points);
     document.querySelector("#points").innerHTML = "points: " + points;
 
-    //her kanlder man på gamestatus så den kan undersøge hver gang hvor mange point der er
+    //her kalder man på gamestatus så den kan undersøge hver gang hvor mange point der er
     gameStatus();
 
 }
@@ -168,22 +168,38 @@ function clickWrong() {
     this.classList.remove("foer_klik");
     this.classList.add("efter_klik");
 
+    //mister liv
     life--;
     document.querySelector("#energy").innerHTML = "life: " + life;
     console.log(life);
 
     //rotating
-    //NOTE: DET VED JEG IKKE LIGE
+    console.log(this);
+    this.classList.add("rotation");
 
-    //mist liv
-    //NOTE: DET VED JEG IKKE LIGE
+    gameStatus();
+
 }
+
+
+//denne her der skal vurdere om vi har liv tilbage eller mere tid tilbage
+function gameStatus() {
+
+    //her definere man hvornår man dør, når der er x antal liv tilbage
+    if (life <= 0) {
+        gameOver();
+    }
+
+}
+
 
 function levelComplete() {
     console.log("levelComplete")
 
     //vis game win skærm
-    //NOTE: DET VED JEG IKKE LIGE
+    document.querySelector("#level_complete").classList.add("show");
+
+    //vis menu knap
 
     //start animation på replay knap
     //NOTE: DET VED JEG IKKE LIGE
@@ -193,7 +209,7 @@ function gameOver() {
     console.log("gameOver")
 
     //vis game over skærm
-    //NOTE: DET VED JEG IKKE LIGE
+    document.querySelector("#game_over").classList.add("show");
 
     //start animation på replay knap
     //NOTE: DET VED JEG IKKE LIGE
