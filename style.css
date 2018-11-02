@@ -41,7 +41,7 @@ body {
     top: 22.3vw;
 }
 
-#settings_bottom {
+#settings_buttom {
     background-image: url(grafik/setting_knap_startskaerm.svg);
     background-size: 100%;
     width: 32vw;
@@ -153,34 +153,59 @@ body {
     top: 35.4vw;
 }
 
+/****************MISSION BOBBEL****************/
+
+#mission {
+    background-image: url(grafik/game_beskrivelse.svg);
+    background-size: 100%;
+    width: 50vw;
+    height: 32vw;
+    margin: auto;
+    overflow: hidden;
+
+    position: absolute;
+    left: 30vw;
+    top: 23vw;
+}
+
+#mission_play {
+    background-image: url(grafik/play_mission.svg);
+    background-size: 100%;
+    width: 8vw;
+    height: 5.3vw;
+    margin: auto;
+    overflow: hidden;
+
+    position: absolute;
+    left: 22.1vw;
+    top: 24vw;
+}
+
+
 /****************BØGERNE****************/
+
+/**bog somemrfugl**/
 #bog_sommerfugl {
+    background-size: 100%;
+    width: 16vw;
+    height: 5.3vw;
+
+    position: absolute;
+    left: 47vw;
+    top: 2.4vw;
+}
+
+#bog_sommerfugl.foer_klik {
     background-image: url(grafik/bog_sommerfugl.svg);
-    background-size: 100%;
-    width: 16vw;
-    height: 5.3vw;
-
-    position: absolute;
-    left: 47vw;
-    top: 2.4vw;
 }
 
-#bog_sommerfugl_forkert {
+#bog_sommerfugl.efter_klik {
     background-image: url(grafik/bog_sommerfugl_forkert.svg);
-    background-size: 100%;
-    width: 16vw;
-    height: 5.3vw;
-
-    position: absolute;
-    left: 47vw;
-    top: 2.4vw;
-
-    /*    display: none;*/
 }
 
 
+/**bog sol**/
 #bog_sol {
-    background-image: url(grafik/bog_sol.svg);
     background-size: 100%;
     width: 5.2vw;
     height: 13vw;
@@ -190,44 +215,36 @@ body {
     top: 2.6vw;
 }
 
-#bog_sol_forkert {
+#bog_sol.foer_klik {
+    background-image: url(grafik/bog_sol.svg);
+}
+
+
+#bog_sol.efter_klik {
     background-image: url(grafik/bog_sol_forkert.svg);
-    background-size: 100%;
-    width: 5.2vw;
-    height: 13.1vw;
-
-    position: absolute;
-    left: 71.5vw;
-    top: 2.6vw;
-
-    /*    display: none;*/
 }
 
 
+/**bog gris**/
 #bog_gris {
+    background-size: 100%;
+    width: 20vw;
+    height: 4.3vw;
+
+    position: absolute;
+    left: 61vw;
+    top: 17.4vw;
+}
+
+#bog_gris.foer_klik {
     background-image: url(grafik/bog_gris.svg);
-    background-size: 100%;
-    width: 20vw;
-    height: 4.3vw;
-
-    position: absolute;
-    left: 61vw;
-    top: 17.4vw;
 }
 
-#bog_gris_rigtig {
+#bog_gris.efter_klik {
     background-image: url(grafik/bog_gris_rigtig.svg);
-    background-size: 100%;
-    width: 20vw;
-    height: 4.3vw;
-
-    position: absolute;
-    left: 61vw;
-    top: 17.4vw;
-
-    /*    display: none;*/
 }
 
+/**bog får**/
 #bog_faar {
     background-image: url(grafik/bog_faar.svg);
 
@@ -240,93 +257,79 @@ body {
     top: 20.4vw;
 }
 
-#bog_faar_rigtig {
-    background-image: url(grafik/bog_faar_rigtig.svg);
-
-    background-size: 100%;
-    width: 5.2vw;
-    height: 9.8vw;
-
-    position: absolute;
-    left: 91.3vw;
-    top: 20.4vw;
-
-    /*    display: none;*/
+#bog_faar.foer_klik {
+    background-image: url(grafik/bog_faar.svg);
 }
+
+#bog_faar.efter_klik {
+    background-image: url(grafik/bog_faar_rigtig.svg);
+}
+
+/**bog hund**/
 
 #bog_hund {
+    background-size: 100%;
+    width: 5.1vw;
+    height: 9.6vw;
+
+    position: absolute;
+    left: 79.6vw;
+    top: 34.1vw;
+}
+
+
+#bog_hund.foer_klik {
     background-image: url(grafik/bog_hund.svg);
-    background-size: 100%;
-    width: 5.1vw;
-    height: 9.6vw;
-
-    position: absolute;
-    left: 79.6vw;
-    top: 34.1vw;
 }
 
-#bog_hund_forkert {
+#bog_hund.efter_klik {
     background-image: url(grafik/bog_hund_forkert.svg);
-    background-size: 100%;
-    width: 5.1vw;
-    height: 9.6vw;
-
-    position: absolute;
-    left: 79.6vw;
-    top: 34.1vw;
-
-    /*    display: none;*/
 }
+
+
+/**bog ko**/
 
 #bog_ko {
+    background-size: 100%;
+    width: 4.7vw;
+    height: 10vw;
+
+    position: absolute;
+    left: 55.4vw;
+    top: 45.1vw;
+}
+
+#bog_ko.foer_klik {
     background-image: url(grafik/bog_ko.svg);
-    background-size: 100%;
-    width: 4.7vw;
-    height: 10vw;
-
-    position: absolute;
-    left: 55.4vw;
-    top: 45.1vw;
 }
 
-#bog_ko_rigtig {
+#bog_ko.efter_klik {
     background-image: url(grafik/bog_ko_rigtig.svg);
-    background-size: 100%;
-    width: 4.7vw;
-    height: 10vw;
-
-    position: absolute;
-    left: 55.4vw;
-    top: 45.1vw;
-    /*    display: none;*/
 }
+
+/**bog kat**/
 
 #bog_kat {
+    background-size: 100%;
+    width: 4.7vw;
+    height: 8.7vw;
+
+    position: absolute;
+    left: 65.2vw;
+    top: 46.5vw;
+}
+
+#bog_kat.foer_klik {
     background-image: url(grafik/bog_kat.svg);
-    background-size: 100%;
-    width: 4.7vw;
-    height: 8.7vw;
-
-    position: absolute;
-    left: 65.2vw;
-    top: 46.5vw;
 }
 
-#bog_kat_rigtig {
+#bog_kat.efter_klik {
     background-image: url(grafik/bog_kat_rigtig.svg);
-    background-size: 100%;
-    width: 4.7vw;
-    height: 8.7vw;
-
-    position: absolute;
-    left: 65.2vw;
-    top: 46.5vw;
-
-    /*    display: none;*/
 }
+
+/**bog elefant**/
 
 #bog_elefant {
-    background-image: url(grafik/bog_elefant.svg);
     background-size: 100%;
     width: 7.5vw;
     height: 9.9vw;
@@ -336,17 +339,12 @@ body {
     top: 45.2vw;
 }
 
-#bog_elefant_forkert {
+#bog_elefant.foer_klik {
+    background-image: url(grafik/bog_elefant.svg);
+}
+
+#bog_elefant.efter_klik {
     background-image: url(grafik/bog_elefant_forkert.svg);
-    background-size: 100%;
-    width: 7.5vw;
-    height: 9.9vw;
-
-    position: absolute;
-    left: 89.1vw;
-    top: 45.2vw;
-
-    /*    display: none;*/
 }
 
 
@@ -516,6 +514,10 @@ body {
 
 .show {
     visibility: visible;
+}
+
+.disappear {
+    visibility: hidden;
 }
 
 /*****pulsing**/
