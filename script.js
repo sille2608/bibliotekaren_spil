@@ -190,6 +190,9 @@ function gameStatus() {
         gameOver();
     }
 
+    //her definere man hvornår man vinder, når der er x antal point
+    //NOTE: DET VED JEG IKKE LIGE
+
 }
 
 
@@ -197,7 +200,7 @@ function levelComplete() {
     console.log("levelComplete")
 
     //vis game win skærm
-    document.querySelector("#level_complete").classList.add("show");
+    document.querySelector("#levelcomplete").classList.add("show");
 
     //vis menu knap
 
@@ -209,7 +212,9 @@ function gameOver() {
     console.log("gameOver")
 
     //vis game over skærm
-    document.querySelector("#game_over").classList.add("show");
+    document.querySelector("#gameover").classList.add("show");
+    document.querySelector("#menu_knap").classList.add("show");
+    document.querySelector("#spil_igen_knap").classList.add("show");
 
     //start animation på replay knap
     //NOTE: DET VED JEG IKKE LIGE

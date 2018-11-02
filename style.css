@@ -398,7 +398,7 @@ body {
 /*********************GAME OVER******************/
 
 
-#game_over {
+#gameover {
     background-image: url(grafik/game_over_firkant.svg);
     background-size: 100%;
     width: 80vw;
@@ -409,7 +409,6 @@ body {
 
     left: 12vw;
     top: 1vw;
-    display: none;
 }
 
 
@@ -424,7 +423,6 @@ body {
 
     left: 60vw;
     top: 45vw;
-    display: none;
 }
 
 #spil_igen_knap {
@@ -438,7 +436,6 @@ body {
 
     left: 68vw;
     top: 45vw;
-    display: none;
 }
 
 /****************LEVEL COMPLETE****************/
@@ -454,7 +451,6 @@ body {
 
     left: 12vw;
     top: 1vw;
-    display: none;
 
 }
 
@@ -470,7 +466,6 @@ body {
 
     left: 60vw;
     top: 45vw;
-    display: none;
 }
 
 #spil_igen_knap {
@@ -484,7 +479,6 @@ body {
 
     left: 68vw;
     top: 45vw;
-    display: none;
 }
 
 
