@@ -106,7 +106,7 @@ function hideMission() {
     document.querySelector("#mission").classList.add("fade_out");
 
     //skjul Mission-talebobbel
-    document.querySelector("#mission").classList.add("hide");
+    document.querySelector("#mission").classList.remove("show");
 
     //skjul mission play knap
     document.querySelector("#mission_play").classList.remove("show");
