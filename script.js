@@ -91,7 +91,7 @@ function showMission() {
 
 
     //start lyd mission_audio
-    document.querySelector
+    document.querySelector("#mission_audio").play();
 
 
     //Klik til spil start
@@ -117,6 +117,9 @@ function hideMission() {
 
     //når skjul Mission-talebobbel er færdig -startGame
     document.querySelector("#mission").addEventListener("animationend", startGame);
+
+    // stop lyd mission_audio
+    document.querySelector("#mission_audio").muted = true;
 }
 
 
@@ -164,6 +167,10 @@ function clickCorrect() {
     //her kalder man på gamestatus så den kan undersøge hver gang hvor mange point der er
     gameStatus();
 
+    //lyd correct_click_audio
+    document.querySelector("#correct_click_audio").play();
+    document.querySelector("#correct_click_audio").currentTime = 0;
+
 }
 
 function clickWrong() {
@@ -183,6 +190,9 @@ function clickWrong() {
 
     gameStatus();
 
+    //lyd wrong_click_audio
+    document.querySelector("#wrong_click_audio").play();
+    document.querySelector("#wrong_click_audio").currentTime = 0;
 }
 
 
@@ -199,27 +209,37 @@ function gameStatus() {
 
 }
 
-
 function levelComplete() {
     console.log("levelComplete")
 
     //vis game win skærm
     document.querySelector("#levelcomplete").classList.add("show");
-
-    //vis menu knap
+    document.querySelector("#menu_knap").classList.add("show");
+    document.querySelector("#spil_igen_knap").classList.add("show");
 
     //start animation på replay knap
-    //NOTE: DET VED JEG IKKE LIGE
+    document.querySelector("#spil_igen_knap").classList.add("pulse");
+
+    //stop tideligere lyd fra correct_click_audio
+    document.querySelector("#correct_click_audio").muted = true;
+    //lyd levelcomplete_audio
+    document.querySelector("#levelcomplete_audio").play();
+
 }
 
 function gameOver() {
     console.log("gameOver")
 
-    //vis game over skærm
+    //vis game over skærm og knapper
     document.querySelector("#gameover").classList.add("show");
     document.querySelector("#menu_knap").classList.add("show");
     document.querySelector("#spil_igen_knap").classList.add("show");
 
     //start animation på replay knap
     document.querySelector("#spil_igen_knap").classList.add("pulse");
+
+    //stop tideligere lyd fra wrong_click_audio
+    document.querySelector("#wrong_click_audio").muted = true;
+    //lyd gameover_audio
+    document.querySelector("#gameover_audio").play();
 }
