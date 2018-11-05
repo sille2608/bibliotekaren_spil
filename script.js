@@ -90,6 +90,10 @@ function showMission() {
     document.querySelector("#mission_play").classList.add("pulse");
 
 
+    //start lyd mission_audio
+    document.querySelector
+
+
     //Klik til spil start
     document.querySelector("#mission_play").addEventListener("click", hideMission);
 
