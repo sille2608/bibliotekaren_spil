@@ -89,7 +89,6 @@ function showMission() {
     //start animation på play knappen
     document.querySelector("#mission_play").classList.add("pulse");
 
-
     //start lyd mission_audio
     document.querySelector("#mission_audio").play();
 
@@ -128,6 +127,9 @@ function startGame() {
 
     //start tiden
     //NOTE: DET VED JEG IKKE LIGE
+
+    //start baggrundmusik
+    document.querySelector("#background_music").play();
 
     // start animation på ur-viseren
     document.querySelector("#time").classList.add("time_rotation");
@@ -193,6 +195,8 @@ function clickWrong() {
     //lyd wrong_click_audio
     document.querySelector("#wrong_click_audio").play();
     document.querySelector("#wrong_click_audio").currentTime = 0;
+
+
 }
 
 
@@ -225,6 +229,10 @@ function levelComplete() {
     //lyd levelcomplete_audio
     document.querySelector("#levelcomplete_audio").play();
 
+    //pause baggrundmusik
+    document.querySelector("#background_music").pause();
+
+
 }
 
 function gameOver() {
@@ -242,4 +250,8 @@ function gameOver() {
     document.querySelector("#wrong_click_audio").muted = true;
     //lyd gameover_audio
     document.querySelector("#gameover_audio").play();
+
+    //pause baggrundmusik
+    document.querySelector("#background_music").pause();
+
 }
