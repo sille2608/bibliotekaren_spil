@@ -35,6 +35,9 @@ function showSetting() {
     //Klik tilbage til start
     document.querySelector("#kryds_knap").addEventListener("click", hideSetting);
 
+    document.querySelector("#setting_effect_sound").addEventListener("click", toggleSounds);
+    document.querySelector("#setting_music").addEventListener("click", toggleMusic);
+
 }
 
 function hideSetting() {
@@ -254,65 +257,99 @@ function gameOver() {
 
 }
 
+//*************'musik og lyd¨****************'//
+
+
+let showSettingsEffektSound = true;
+let showSettingsMusic = true;
+
 
 function toggleSounds() {
-    console.log("toggle sounds");
+    console.log("toggleSounds");
 
-    if (showSettingsEffektSound == true) {
-        showSettingsEffektSound = false;
-        soundsOff();
-    } else {
+    if (showSettingsEffektSound == false) {
+        //her klikker vi lyden på
         showSettingsEffektSound = true;
-        soundsOn();
+        document.querySelector("#lydeffekter_sprite").classList.add("off_on");
+        document.querySelector("#lydeffekter_sprite").classList.remove("off");
+        document.querySelector("#lydeffekter_sprite").addEventListener("animationend", soundsOn);
+        //        soundsOff();
+    } else {
+        //her kikker vi lyden af - slukker den
+        showSettingsEffektSound = false;
+        document.querySelector("#lydeffekter_sprite").classList.add("on_off");
+        document.querySelector("#lydeffekter_sprite").classList.remove("on");
+        document.querySelector("#lydeffekter_sprite").addEventListener("animationend", soundsOff);
+        //        soundsOn();
     }
 
-
 }
+
 
 function soundsOff() {
-    console.log("sounds OFF");
-
-    document.querySelector("#sfx").classList.add("off");
-    document.querySelector("#hapshaps").muted = true;
-    document.querySelector("#prut_audio").muted = true;
-
+    console.log("soundsOff function værdi er " + showSettingsEffektSound);
+    document.querySelector("#lydeffekter_sprite").removeEventListener("animationend", soundsOff);
+    document.querySelector("#lydeffekter_sprite").classList.remove("on_off");
+    document.querySelector("#lydeffekter_sprite").classList.add("off");
+    //    her slukkes for efx
+    document.querySelector("#correct_click_audio").muted = true;
+    document.querySelector("#wrong_click_audio").muted = true;
 }
+
 
 function soundsOn() {
-    console.log("sounds ON");
-
-    document.querySelector("#sfx").classList.remove("off");
-
-    document.querySelector("#hapshaps").muted = false;
-    document.querySelector("#prut_audio").muted = false;
-
+    console.log("soundsOn function værdi er " + showSettingsEffektSound);
+    document.querySelector("#lydeffekter_sprite").removeEventListener("animationend", soundsOn);
+    document.querySelector("#lydeffekter_sprite").classList.remove("off_on");
+    document.querySelector("#lydeffekter_sprite").classList.add("on");
+    //    her tændes for efx
+    document.querySelector("#correct_click_audio").muted = false;
+    document.querySelector("#wrong_click_audio").muted = false;
 }
 
-function toggleMusic() {
-    console.log("toggle music");
 
-    if (showSettingsMusic == true) {
-        showSettingsMusic = false;
-        musicOff();
-    } else {
+
+function toggleMusic() {
+    console.log("togglemusic");
+
+    if (showSettingsMusic == false) {
+        //her klikker vi lyden på
         showSettingsMusic = true;
-        musicOn();
+        document.querySelector("#music_sprite").classList.add("off_on");
+        document.querySelector("#music_sprite").classList.remove("off");
+        document.querySelector("#music_sprite").addEventListener("animationend", musicOn);
+        //        soundsOff();
+    } else {
+        //her kikker vi lyden af - slukker den
+        showSettingsMusic = false;
+        document.querySelector("#music_sprite").classList.add("on_off");
+        document.querySelector("#music_sprite").classList.remove("on");
+        document.querySelector("#music_sprite").addEventListener("animationend", musicOff);
+        //        soundsOn();
     }
+
+
 
 }
 
 function musicOff() {
-    console.log("music OFF");
+    console.log("musicOff function værdi er " + showSettingsMusic);
 
-    document.querySelector("#music").classList.add("off");
+    document.querySelector("#music_sprite").removeEventListener("animationend", musicOff);
+    document.querySelector("#music_sprite").classList.remove("on_off");
+    document.querySelector("#music_sprite").classList.add("off");
+    //    her slukkes for muisk
     document.querySelector("#background_music").pause();
 
 }
 
 function musicOn() {
-    console.log("music ON");
+    console.log("musicOn function værdi er " + showSettingsMusic);
 
-    document.querySelector("#music").classList.remove("off");
+    document.querySelector("#music_sprite").removeEventListener("animationend", musicOn);
+    document.querySelector("#music_sprite").classList.remove("off_on");
+    document.querySelector("#music_sprite").classList.add("on");
+    //    her tændes for musik
     document.querySelector("#background_music").play();
 
 }
