@@ -196,7 +196,6 @@ function clickWrong() {
     document.querySelector("#wrong_click_audio").play();
     document.querySelector("#wrong_click_audio").currentTime = 0;
 
-
 }
 
 
@@ -232,7 +231,6 @@ function levelComplete() {
     //pause baggrundmusik
     document.querySelector("#background_music").pause();
 
-
 }
 
 function gameOver() {
@@ -253,5 +251,68 @@ function gameOver() {
 
     //pause baggrundmusik
     document.querySelector("#background_music").pause();
+
+}
+
+
+function toggleSounds() {
+    console.log("toggle sounds");
+
+    if (showSettingsEffektSound == true) {
+        showSettingsEffektSound = false;
+        soundsOff();
+    } else {
+        showSettingsEffektSound = true;
+        soundsOn();
+    }
+
+
+}
+
+function soundsOff() {
+    console.log("sounds OFF");
+
+    document.querySelector("#sfx").classList.add("off");
+    document.querySelector("#hapshaps").muted = true;
+    document.querySelector("#prut_audio").muted = true;
+
+}
+
+function soundsOn() {
+    console.log("sounds ON");
+
+    document.querySelector("#sfx").classList.remove("off");
+
+    document.querySelector("#hapshaps").muted = false;
+    document.querySelector("#prut_audio").muted = false;
+
+}
+
+function toggleMusic() {
+    console.log("toggle music");
+
+    if (showSettingsMusic == true) {
+        showSettingsMusic = false;
+        musicOff();
+    } else {
+        showSettingsMusic = true;
+        musicOn();
+    }
+
+}
+
+function musicOff() {
+    console.log("music OFF");
+
+    document.querySelector("#music").classList.add("off");
+    document.querySelector("#background_music").pause();
+
+}
+
+function musicOn() {
+    console.log("music ON");
+
+    document.querySelector("#music").classList.remove("off");
+    document.querySelector("#background_music").play();
 
 }
