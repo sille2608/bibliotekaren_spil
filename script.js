@@ -63,6 +63,8 @@ function hideStart() {
     document.querySelector("#bog_ko").classList.add("foer_klik");
     document.querySelector("#bog_kat").classList.add("foer_klik");
 
+    //klik på setting knap i spillet
+    document.querySelector("#setting_knap_spil").addEventListener("click", showSetting);
 
     //fade startskærm ud
     document.querySelector("#start").classList.add("fade_out");
@@ -78,6 +80,9 @@ function showMission() {
     //skjul startskærm
     document.querySelector("#start").classList.add("hide");
     document.querySelector("#start").classList.remove("show");
+
+    //start baggrundmusik
+    document.querySelector("#background_music").play();
 
     //vis spilskærm
     document.querySelector("#game_background").classList.add("show");
@@ -122,6 +127,9 @@ function hideMission() {
 
     // stop lyd mission_audio
     document.querySelector("#mission_audio").muted = true;
+
+    //*****Her skal jeg få karakteren til at rykke sig når man klikker på start knappen***//
+    document.querySelector("#mission_play").classList.add("karakter_move");
 }
 
 
@@ -131,11 +139,11 @@ function startGame() {
     //start tiden
     //NOTE: DET VED JEG IKKE LIGE
 
-    //start baggrundmusik
-    document.querySelector("#background_music").play();
-
     // start animation på ur-viseren
     document.querySelector("#time").classList.add("time_rotation");
+
+    //start pulse på liste_dyr
+    document.querySelector("#liste_dyr").classList.add("pulse");
 
     //aktiver at der kan klikkes på bøgerne
     document.querySelector("#bog_sommerfugl").addEventListener("click", clickWrong);
@@ -147,8 +155,6 @@ function startGame() {
     document.querySelector("#bog_faar").addEventListener("click", clickCorrect);
     document.querySelector("#bog_ko").addEventListener("click", clickCorrect);
     document.querySelector("#bog_kat").addEventListener("click", clickCorrect);
-
-
 }
 
 let points = 0;
@@ -167,7 +173,7 @@ function clickCorrect() {
     //giv point
     points++;
     console.log(points);
-    document.querySelector("#points").innerHTML = "points: " + points;
+    document.querySelector("#points").textContent = points;
 
     //her kalder man på gamestatus så den kan undersøge hver gang hvor mange point der er
     gameStatus();
@@ -186,7 +192,7 @@ function clickWrong() {
 
     //mister liv
     life--;
-    document.querySelector("#energy").innerHTML = "life: " + life;
+    document.querySelector("#energy").textContent = life;
     console.log(life);
 
     //rotating
@@ -213,6 +219,10 @@ function gameStatus() {
     //her definere man hvornår man vinder, når der er x antal point
     //NOTE: DET VED JEG IKKE LIGE
 
+    //    if (points = 4) {
+    //        levelComplete();
+    //    }
+
 }
 
 function levelComplete() {
@@ -228,6 +238,7 @@ function levelComplete() {
 
     //stop tideligere lyd fra correct_click_audio
     document.querySelector("#correct_click_audio").muted = true;
+
     //lyd levelcomplete_audio
     document.querySelector("#levelcomplete_audio").play();
 
@@ -255,7 +266,19 @@ function gameOver() {
     //pause baggrundmusik
     document.querySelector("#background_music").pause();
 
+    //aktivere replay knappen
+    //NOTE DET VED JEG IKKE LIGE
+
+    //aktivere menu knappen
+    ////NOTE DET VED JEG IKKE LIGE
+
+
 }
+
+
+
+
+
 
 //*************'musik og lyd¨****************'//
 
@@ -294,8 +317,10 @@ function soundsOff() {
     //    her slukkes for efx
     document.querySelector("#correct_click_audio").muted = true;
     document.querySelector("#wrong_click_audio").muted = true;
+    document.querySelector("#mission_audio").muted = true;
+    document.querySelector("#levelcomplete_audio").muted = true;
+    document.querySelector("#gameover_audio").muted = true;
 }
-
 
 function soundsOn() {
     console.log("soundsOn function værdi er " + showSettingsEffektSound);
@@ -305,6 +330,9 @@ function soundsOn() {
     //    her tændes for efx
     document.querySelector("#correct_click_audio").muted = false;
     document.querySelector("#wrong_click_audio").muted = false;
+    document.querySelector("#mission_audio").muted = false;
+    document.querySelector("#levelcomplete_audio").muted = false;
+    document.querySelector("#gameover_audio").muted = false;
 }
 
 
@@ -328,9 +356,8 @@ function toggleMusic() {
         //        soundsOn();
     }
 
-
-
 }
+
 
 function musicOff() {
     console.log("musicOff function værdi er " + showSettingsMusic);

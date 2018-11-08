@@ -101,16 +101,36 @@ body {
 }
 
 #karakteren {
-    background-image: url(grafik/karakteren.svg);
-    background-size: 100%;
-    width: 35vw;
+    background-image: url(grafik/karakter_sprite.svg);
+    background-size: 500% 100%;
+    display: inline-block;
+    width: 43vw;
     height: 50vw;
     margin: auto;
-    overflow: hidden;
 
     position: absolute;
-    left: 13vw;
-    top: 4vw;
+    left: 6vw;
+    top: -3vw;
+}
+
+@keyframes karakter_move {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -400% 0;
+    }
+}
+
+#liste_dyr {
+    background-image: url(grafik/liste_dyr.svg);
+    background-size: 100%;
+    width: 18vw;
+    height: 25.5vw;
+    position: absolute;
+    left: 34vw;
+    top: 19vw;
 }
 
 
@@ -124,6 +144,18 @@ body {
     position: absolute;
     left: 0vw;
     top: 35.4vw;
+}
+
+
+#setting_knap_spil {
+    background-image: url(grafik/setting_knap%20.svg);
+    background-size: 100%;
+    width: 3.5vw;
+    height: 4.1vw;
+
+    position: absolute;
+    left: 1vw;
+    top: 1vw;
 }
 
 /****************MISSION BOBBEL****************/
