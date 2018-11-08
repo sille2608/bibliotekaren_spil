@@ -155,6 +155,9 @@ function startGame() {
     document.querySelector("#bog_faar").addEventListener("click", clickCorrect);
     document.querySelector("#bog_ko").addEventListener("click", clickCorrect);
     document.querySelector("#bog_kat").addEventListener("click", clickCorrect);
+
+    //sæt dette ind det sted hvor tiden skal starte her kalder man på at tiden skal starte
+    tidenGaar();
 }
 
 let points = 0;
@@ -275,7 +278,28 @@ function gameOver() {
 
 }
 
+//*************tiden********************////
+//bestemmer her hvad start tiden er
+let timeleft = 10;
 
+
+function tidenGaar() {
+    console.log("tidenGaar")
+
+    //trækker 1 fra den tid vi har defineret i starten
+    timeleft--;
+
+
+    //her bestemmer at hver 1 sek så skal der opsumeres hvor lang tid der er tilbage. Her skrives det i ms. Man skriver "tidenGaar" fordi den skal kalde på sig selv igen efter 1 sek. Grunden til den er i en if sætning er fordi man skal sige at hvis tiden er større end nul så skal den tælle ned og hvis tiden ikke er større end nul har man jo tabt og man går til gameover
+
+    if (timeleft > 0) {
+        setTimeout(tidenGaar, 1000);
+    } else {
+        gameOver();
+    }
+
+    console.log(timeleft);
+}
 
 
 
