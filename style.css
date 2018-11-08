@@ -102,7 +102,7 @@ body {
 
 #karakteren {
     background-image: url(grafik/karakter_sprite.svg);
-    background-size: 500% 100%;
+    background-size: 600% 100%;
     display: inline-block;
     width: 43vw;
     height: 50vw;
@@ -119,7 +119,7 @@ body {
     }
 
     100% {
-        background-position: -400% 0;
+        background-position: -500% 0;
     }
 }
 
@@ -129,7 +129,7 @@ body {
 }
 
 .left {
-    background-position: -400% 0;
+    background-position: -500% 0;
 }
 
 .karakter_look_right {
@@ -137,7 +137,7 @@ body {
     animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
-    animation-timing-function: steps(4);
+    animation-timing-function: steps(5);
 }
 
 .karakter_look_left {
@@ -146,7 +146,7 @@ body {
     animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-fill-mode: both;
-    animation-timing-function: steps(4);
+    animation-timing-function: steps(5);
 }
 
 
@@ -427,7 +427,7 @@ body {
 
 
 
-/*********************GAME OVER******************/
+/*********************GAME OVER og LEVEL COMPLETE ******************/
 
 
 #gameover {
@@ -443,36 +443,7 @@ body {
     top: 1vw;
 }
 
-
-#menu_knap {
-    background-image: url(grafik/menu_knap.svg);
-    background-size: 100%;
-    width: 6.2vw;
-    height: 5.7vw;
-    margin: auto;
-    position: absolute;
-    overflow: hidden;
-
-    left: 60vw;
-    top: 45vw;
-}
-
-#spil_igen_knap {
-    background-image: url(grafik/spil_igen_knap.svg);
-    background-size: 100%;
-    width: 5.7vw;
-    height: 5.7vw;
-    margin: auto;
-    position: absolute;
-    overflow: hidden;
-
-    left: 68vw;
-    top: 45vw;
-}
-
-/****************LEVEL COMPLETE****************/
-
-#level_complete {
+#levelcomplete {
     background-image: url(grafik/win_firkant.svg);
     background-size: 100%;
     width: 80vw;
@@ -485,7 +456,6 @@ body {
     top: 1vw;
 }
 
-
 #menu_knap {
     background-image: url(grafik/menu_knap.svg);
     background-size: 100%;
@@ -511,6 +481,7 @@ body {
     left: 68vw;
     top: 45vw;
 }
+
 
 
 /******************EFFEKTER********************/

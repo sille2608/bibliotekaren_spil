@@ -224,9 +224,9 @@ function gameStatus() {
     //her definere man hvornår man vinder, når der er x antal point
     //NOTE: DET VED JEG IKKE LIGE
 
-    //    if (points = 4) {
-    //        levelComplete();
-    //    }
+    if (points > 3) {
+        levelComplete();
+    }
 
 }
 
@@ -249,6 +249,12 @@ function levelComplete() {
 
     //pause baggrundmusik
     document.querySelector("#background_music").pause();
+
+    //aktivere replay knappen
+    //NOTE DET VED JEG IKKE LIGE
+
+    //aktivere menu knappen
+    //NOTE DET VED JEG IKKE LIGE
 
 }
 
