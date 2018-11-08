@@ -278,10 +278,16 @@ function gameOver() {
     //NOTE DET VED JEG IKKE LIGE
 
     //aktivere menu knappen
-    ////NOTE DET VED JEG IKKE LIGE
-
+    //NOTE DET VED JEG IKKE LIGE
 
 }
+
+
+//***********replay og menu knap*********////
+
+
+
+
 
 //*************tiden********************////
 
@@ -338,7 +344,6 @@ function toggleSounds() {
 
 }
 
-
 function soundsOff() {
     console.log("soundsOff function værdi er " + showSettingsEffektSound);
     document.querySelector("#lydeffekter_sprite").removeEventListener("animationend", soundsOff);
@@ -364,7 +369,6 @@ function soundsOn() {
     document.querySelector("#levelcomplete_audio").muted = false;
     document.querySelector("#gameover_audio").muted = false;
 }
-
 
 
 function toggleMusic() {
@@ -395,6 +399,7 @@ function musicOff() {
     document.querySelector("#music_sprite").removeEventListener("animationend", musicOff);
     document.querySelector("#music_sprite").classList.remove("on_off");
     document.querySelector("#music_sprite").classList.add("off");
+
     //    her slukkes for muisk
     document.querySelector("#background_music").pause();
 
@@ -406,6 +411,7 @@ function musicOn() {
     document.querySelector("#music_sprite").removeEventListener("animationend", musicOn);
     document.querySelector("#music_sprite").classList.remove("off_on");
     document.querySelector("#music_sprite").classList.add("on");
+
     //    her tændes for musik
     document.querySelector("#background_music").play();
 

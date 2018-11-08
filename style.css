@@ -239,12 +239,12 @@ body {
 /**bog sol**/
 #bog_sol {
     background-size: 100%;
-    width: 5.2vw;
-    height: 13vw;
+    width: 5.1vw;
+    height: 12.8vw;
 
     position: absolute;
     left: 71.5vw;
-    top: 2.6vw;
+    top: 2.9vw;
 }
 
 #bog_sol.foer_klik {
@@ -483,7 +483,6 @@ body {
 
     left: 12vw;
     top: 1vw;
-
 }
 
 
