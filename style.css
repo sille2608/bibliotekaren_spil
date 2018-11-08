@@ -553,7 +553,7 @@ body {
 
 .time_rotation {
     animation-name: time;
-    animation-duration: 15s;
+    animation-duration: 9s;
     animation-iteration-count: 1;
     animation-timing-function: linear;
     transform-origin: 50% 92%;
