@@ -136,9 +136,6 @@ function hideMission() {
 function startGame() {
     console.log("startGame");
 
-    //start tiden
-    //NOTE: DET VED JEG IKKE LIGE
-
     // start animation på ur-viseren
     document.querySelector("#time").classList.add("time_rotation");
 
@@ -156,8 +153,13 @@ function startGame() {
     document.querySelector("#bog_ko").addEventListener("click", clickCorrect);
     document.querySelector("#bog_kat").addEventListener("click", clickCorrect);
 
-    //sæt dette ind det sted hvor tiden skal starte her kalder man på at tiden skal starte
+    //tiden starter
     tidenGaar();
+
+    //karakteren skal lave sin animation
+    document.querySelector("#karakteren").classList.add("karakter_look_right");
+
+
 }
 
 let points = 0;
@@ -253,6 +255,9 @@ function levelComplete() {
 function gameOver() {
     console.log("gameOver")
 
+    //stop animation på ur-viseren
+    document.querySelector("#time").classList.remove("time_rotation");
+
     //vis game over skærm og knapper
     document.querySelector("#gameover").classList.add("show");
     document.querySelector("#menu_knap").classList.add("show");
@@ -279,6 +284,7 @@ function gameOver() {
 }
 
 //*************tiden********************////
+
 //bestemmer her hvad start tiden er
 let timeleft = 10;
 

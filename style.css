@@ -123,6 +123,33 @@ body {
     }
 }
 
+
+.right {
+    background-position: 0;
+}
+
+.left {
+    background-position: -400% 0;
+}
+
+.karakter_look_right {
+    animation-name: karakter_move;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: steps(4);
+}
+
+.karakter_look_left {
+    animation-name: karakter_move;
+    animation-direction: reverse;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-timing-function: steps(4);
+}
+
+
 #liste_dyr {
     background-image: url(grafik/liste_dyr.svg);
     background-size: 100%;
@@ -249,6 +276,7 @@ body {
     background-image: url(grafik/bog_gris_rigtig.svg);
 }
 
+
 /**bog får**/
 #bog_faar {
     background-image: url(grafik/bog_faar.svg);
@@ -281,7 +309,6 @@ body {
     left: 79.6vw;
     top: 34.1vw;
 }
-
 
 #bog_hund.foer_klik {
     background-image: url(grafik/bog_hund.svg);
@@ -568,7 +595,6 @@ body {
     to {
         transform: rotate(360deg);
     }
-
 
 }
 
