@@ -238,7 +238,7 @@ function levelComplete() {
     document.querySelector("#spil_igen_knap").classList.add("show");
 
     //start animation på replay knap
-    document.querySelector("#spil_igen_knap").classList.add("pulse");
+    document.querySelector("#spil_igen_knap2").classList.add("pulse");
 
     //stop tideligere lyd fra correct_click_audio
     document.querySelector("#correct_click_audio").muted = true;

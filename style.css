@@ -466,6 +466,18 @@ body {
     top: 45vw;
 }
 
+#spil_igen_knap2 {
+    background-image: url(grafik/spil_igen_knap.svg);
+    background-size: 100%;
+    width: 5.7vw;
+    height: 5.7vw;
+    margin: auto;
+    position: absolute;
+    overflow: hidden;
+
+    left: 68vw;
+    top: 45vw;
+}
 
 
 /******************EFFEKTER********************/
