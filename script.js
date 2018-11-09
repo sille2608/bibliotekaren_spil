@@ -295,12 +295,6 @@ function gameOver() {
 }
 
 
-//***********replay og menu knap*********////
-
-
-
-
-
 //*************tiden********************////
 
 //bestemmer her hvad start tiden er
