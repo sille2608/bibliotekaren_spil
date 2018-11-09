@@ -234,8 +234,8 @@ function levelComplete() {
 
     //vis game win skærm
     document.querySelector("#levelcomplete").classList.add("show");
-    document.querySelector("#menu_knap").classList.add("show");
-    document.querySelector("#spil_igen_knap").classList.add("show");
+    document.querySelector("#menu_knap2").classList.add("show");
+    document.querySelector("#spil_igen_knap2").classList.add("show");
 
     //start animation på replay knap
     document.querySelector("#spil_igen_knap2").classList.add("pulse");

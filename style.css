@@ -443,7 +443,20 @@ body {
 #menu_knap {
     background-image: url(grafik/menu_knap.svg);
     background-size: 100%;
-    width: 6.2vw;
+    width: 6.3vw;
+    height: 5.7vw;
+    margin: auto;
+    position: absolute;
+    overflow: hidden;
+
+    left: 60vw;
+    top: 45vw;
+}
+
+#menu_knap2 {
+    background-image: url(grafik/menu_knap.svg);
+    background-size: 100%;
+    width: 6.3vw;
     height: 5.7vw;
     margin: auto;
     position: absolute;
