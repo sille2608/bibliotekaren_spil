@@ -234,7 +234,7 @@ function levelComplete() {
 
     //vis game win skærm
     document.querySelector("#levelcomplete").classList.add("show");
-    document.querySelector("#menu_knap2").classList.add("show");
+    //    document.querySelector("#menu_knap2").classList.add("show");
     document.querySelector("#spil_igen_knap2").classList.add("show");
 
     //start animation på replay knap
@@ -253,11 +253,11 @@ function levelComplete() {
     erSpilletStoppet = true;
 
     //aktivere replay knappen
-    //NOTE DET VED JEG IKKE LIGE
+    document.querySelector("#spil_igen_knap2").addEventListener("click", sidenVises)
+
 
     //aktivere menu knappen
     //NOTE DET VED JEG IKKE LIGE
-
 }
 
 function gameOver() {
@@ -268,7 +268,7 @@ function gameOver() {
 
     //vis game over skærm og knapper
     document.querySelector("#gameover").classList.add("show");
-    document.querySelector("#menu_knap").classList.add("show");
+    //    document.querySelector("#menu_knap").classList.add("show");
     document.querySelector("#spil_igen_knap").classList.add("show");
 
     //start animation på replay knap
@@ -286,7 +286,7 @@ function gameOver() {
     erSpilletStoppet = true;
 
     //aktivere replay knappen
-    //NOTE DET VED JEG IKKE LIGE
+    document.querySelector("#spil_igen_knap").addEventListener("click", sidenVises)
 
     //aktivere menu knappen
     //NOTE DET VED JEG IKKE LIGE
