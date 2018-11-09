@@ -124,14 +124,6 @@ body {
 }
 
 
-.right {
-    background-position: 0;
-}
-
-.left {
-    background-position: -500% 0;
-}
-
 .karakter_look_right {
     animation-name: karakter_move;
     animation-duration: 0.5s;
@@ -140,14 +132,6 @@ body {
     animation-timing-function: steps(5);
 }
 
-.karakter_look_left {
-    animation-name: karakter_move;
-    animation-direction: reverse;
-    animation-duration: 0.5s;
-    animation-iteration-count: 1;
-    animation-fill-mode: both;
-    animation-timing-function: steps(5);
-}
 
 
 #liste_dyr {
