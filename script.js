@@ -209,7 +209,6 @@ function clickWrong() {
     //lyd wrong_click_audio
     document.querySelector("#wrong_click_audio").play();
     document.querySelector("#wrong_click_audio").currentTime = 0;
-
 }
 
 
@@ -250,6 +249,9 @@ function levelComplete() {
     //pause baggrundmusik
     document.querySelector("#background_music").pause();
 
+    //Der registreres om spillet er stoppet inden
+    erSpilletStoppet = true;
+
     //aktivere replay knappen
     //NOTE DET VED JEG IKKE LIGE
 
@@ -279,6 +281,9 @@ function gameOver() {
 
     //pause baggrundmusik
     document.querySelector("#background_music").pause();
+
+    //Der registreres om spillet er stoppet inden
+    erSpilletStoppet = true;
 
     //aktivere replay knappen
     //NOTE DET VED JEG IKKE LIGE
@@ -312,15 +317,34 @@ function tidenGaar() {
 
     if (timeleft > 0) {
         setTimeout(tidenGaar, 1000);
-    } else {
+    } else if (erSpilletStoppet == false) {
+
         gameOver();
     }
 
     console.log(timeleft);
 }
 
+//her husker man om man har haft gameOver før tiden løber ud
+let erSpilletStoppet = false;
+
+function endGame() {
+    console.log("endGame");
 
 
+    // hvis vi har haft game over
+    if (erSpilletStoppet == true) {
+        //gør ingenting
+    } else {
+        // Hvis der er mere ned 3 point er spillet vundet
+        if (points > 3) {
+            levelComplete();
+        } else {
+            gameOver();
+        }
+    }
+
+}
 
 //*************'musik og lyd¨****************'//
 
