@@ -214,6 +214,7 @@ function clickWrong() {
 
 //denne her der skal vurdere om vi har liv tilbage eller mere tid tilbage
 function gameStatus() {
+    console.log("gamestatus")
 
     //her definere man hvornår man dør, når der er x antal liv tilbage
     if (life <= 0) {

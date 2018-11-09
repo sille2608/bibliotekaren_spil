@@ -440,6 +440,7 @@ body {
     top: 1vw;
 }
 
+/*
 #menu_knap {
     background-image: url(grafik/menu_knap.svg);
     background-size: 100%;
@@ -452,7 +453,9 @@ body {
     left: 60vw;
     top: 45vw;
 }
+*/
 
+/*
 #menu_knap2 {
     background-image: url(grafik/menu_knap.svg);
     background-size: 100%;
@@ -465,6 +468,7 @@ body {
     left: 60vw;
     top: 45vw;
 }
+*/
 
 #spil_igen_knap {
     background-image: url(grafik/spil_igen_knap.svg);
